@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_khoso"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <ImageView
+            style="@style/style_image_main"
+            android:src="@drawable/ic_menu_camera"/>
+        <TextView
+            style="@style/style_text_main"
+            android:text="Kho số"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_thutuc"
+        android:layout_toRightOf="@+id/layout_khoso"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <ImageView
+            style="@style/style_image_main"
+            android:src="@drawable/ic_menu_camera"/>
+        <TextView
+            style="@style/style_text_main"
+            android:text="Thủ tục"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_congno"
+        android:layout_below="@+id/layout_khoso"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <ImageView
+            style="@style/style_image_main"
+            android:src="@drawable/ic_menu_camera"/>
+        <TextView
+            style="@style/style_text_main"
+            android:text="Công nợ"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ctkm"
+        android:layout_below="@+id/layout_khoso"
+        android:layout_toRightOf="@+id/layout_congno"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <ImageView
+            style="@style/style_image_main"
+            android:src="@drawable/ic_menu_camera"/>
+        <TextView
+            style="@style/style_text_main"
+            android:lines="2"
+            android:text="Chương trình khuyến mãi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_upanh"
+        android:layout_below="@+id/layout_ctkm"
+        android:layout_width="400dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/style_image_main"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_menu_camera"/>
+
+        <TextView
+            style="@style/style_text_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Úp ảnh"/>
+    </LinearLayout>
+
+</RelativeLayout>

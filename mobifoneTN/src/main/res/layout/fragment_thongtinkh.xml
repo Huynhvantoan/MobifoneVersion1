@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_name"
+        style="@style/style_edittext"
+        android:hint="@string/name"
+        android:text="@string/blank"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="10"
+        app:met_singleLineEllipsis="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_hoten"
+        style="@style/style_edittext"
+        android:hint="@string/h_v_t_n"
+        android:text="@string/blank"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="20"
+        app:met_singleLineEllipsis="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_sdt"
+        style="@style/style_edittext"
+        android:hint="@string/s_i_n_tho_i"
+        android:inputType="number"
+        app:met_iconLeft="@drawable/ic_phone_black_18dp"
+        app:met_iconPadding="0dp"
+        app:met_minCharacters="9"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_sonha"
+        style="@style/style_edittext"
+        android:hint="@string/s_nh"
+        app:met_clearButton="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_duong"
+        style="@style/style_edittext"
+        android:hint="@string/ng"
+        app:met_clearButton="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_phuong"
+        style="@style/style_edittext"
+        android:hint="@string/ph_ng"
+        app:met_clearButton="true" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txt_quan"
+        style="@style/style_edittext"
+        android:hint="@string/qu_n"
+        app:met_clearButton="true" />
+    <com.toan_itc.tn.Lib.ripeffect.RippleView
+        android:id="@+id/btn_send"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/g_i"/>
+    </com.toan_itc.tn.Lib.ripeffect.RippleView>
+</LinearLayout>
